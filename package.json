@@ -16,6 +16,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "chmod +x node_modules/.bin/next",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
