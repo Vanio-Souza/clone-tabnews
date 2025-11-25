@@ -19,11 +19,15 @@
     "prebuild": "chmod +x node_modules/.bin/next",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
   },
   "dependencies": {
     "next": "^13.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
   }
 }
